@@ -15,6 +15,8 @@ public class Squarer {
     /**
      * TODO: Inject this field
      */
+    
+     
     Multiplier multiplier;
 
     /**
@@ -23,6 +25,9 @@ public class Squarer {
      * @param value some number
      * @return value^2
      */
+    public Squarer(Multiplier multiplier){
+        this.multiplier = multiplier;
+    }
     public double getSquare(double value){
         return multiplier.multiply(value, value);
     }
